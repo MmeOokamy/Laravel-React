@@ -21,3 +21,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/test', function () {
     return ['name'=> "Ookamy"];
 });
+/* quand 'post' a l'adresse /api/login est envoyer on affiche la function login
+    de la class AuthApi
+*/
+Route::post('/login', "AuthApi@login");
+
+
+

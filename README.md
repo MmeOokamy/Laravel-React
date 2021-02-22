@@ -1,4 +1,4 @@
-# MmeOokamy.github.io
+# Laravel & ReactJs
 
 
 ### Challenge de développement pour ce dépôt: (Ce que je veux faire)
@@ -21,16 +21,77 @@
 
 ### Laravel
     * gerer .env pour adapter a mariadb => port 3006
-    * php artisan serve 
+    * php artisan serve => c'est good
 
 ### ReactJs
-    * npm start 
+    * npm start => c'est good
+    
+
+## Lié les deux par une API ?
+
+### laravel
+    * dans le fichier => laravel/app/routes/api.php
+        * Route::get('/test', function () {
+             return ['name'=> "Ookamy"];
+        });
+    * run wamp server // php artisan serve 
+    * url =>  http://127.0.0.1:8000/api/test
+
+
+### ReactJs 
+    * npm start
+    * trier les fichiers et components/app
+    * jsconfig.js 
+        * {
+            "compilerOptions": {
+            "baseUrl": "src"
+            },
+            "include": ["src"]
+        }
+    
+    * package.json 
+        "crcf": [
+            "cssmodules",
+            "functional",
+            "uppercase",
+            {
+            "output": "src/components"
+            }
+        ]
+
+    * reactjs/src/components/App/app.js
+        * import React, { Component} from 'react';
+          import ReactDOM from 'react-dom';
+          import css from './App.module.css';
+
+          class App extends React.Component {
+            componentDidMount()
+                {
+                    fetch('http://127.0.0.1:8000/api/test')
+                    .then(function(response) {
+                    response.json().then(function(resp){
+                        console.log(resp);
+                    })
+                    })
+                };
+
+             render() {
+                return (
+                    <div className={css.container}>
+                    <h1>hello</h1>
+                    </div>
+                );
+                }
+                
+        }
+
+        export default App;
 
 
 
 
 
-
+##########################################################################
 
 ## Initialized Laravel & React ensemble // echec
 ### commande

@@ -1,47 +1,27 @@
-import { container } from 'bootstrap';
-import React, { Component} from 'react';
+import React from 'react';
+import Index from "../Index";
+import About from "../About";
+import Projects from "../Projects";
+import NormandyAirlines from "../Projects/NormandyAirLines";
+import ToDoListJS from "../Projects/ToDoListJS";
+import css from "./App.module.css";
+import {Route, BrowserRouter as Router} from "react-router-dom";
 
+const App = ()=> {
 
-
-class App extends Component {
-
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-    }
-  }
-  submit =() => {
-    console.log(this.state)
-    fetch('http://127.0.0.1:8000/api/login',{
-      method: 'post',
-      body: JSON.stringify(this.state),
-      headers: {
-        'Accept':'application/json',
-        'Content-Type':'application/json',
-      },
-    }).then(function(response) {
-      response.json().then(function(resp){
-          console.log(resp);
-      })
-      })
-  }
-
- render() {
-   return (
-    <div className="container">
-      <h1>React et Laravel Application Web</h1>
-      <h2>Le pouvoir du backend et du frontend</h2>
-
-      <input type="email" onChange={(item)=>{this.setState({email: item.target.value})}}/>
-      <input type="password" onChange={(item)=>{this.setState({password: item.target.value})}}/>
-
-      <button onClick={()=>{this.submit()}}>Login</button>
-    </div>
+   return (<>
+   
+      <Router>
+          <Route path="/" exact component={Index} />
+          <Route path="/about" component={About}/>
+          <Route path="/projects" component={Projects}/>
+          <Route path="/projects/NormandyAirlines" component={NormandyAirlines}/>
+          <Route path="/projects/ToDoListJS" component={ToDoListJS}/>
+      </Router>
+   
+   </>
   );
- }
-  
 }
+
 
 export default App;

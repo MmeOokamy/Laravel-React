@@ -13,8 +13,8 @@ const Navigation = () => {
             <a className="navbar-link" href="/projects">Projects</a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item" href="/projects/ToDoListJS">ToDoList-JS</a>
-              <a className="navbar-item" href="/projects/NormandyAirlines">NormandyAirLines</a>
+              <a className="navbar-item" href="/project/ToDoListJS">ToDoList-JS</a>
+              <a className="navbar-item" href="/project/NormandyAirlines">NormandyAirLines</a>
             </div>
           </div>
         </div>

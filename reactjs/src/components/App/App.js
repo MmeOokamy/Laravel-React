@@ -15,8 +15,8 @@ const App = ()=> {
           <Route path="/" exact component={Index} />
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
-          <Route path="/projects/NormandyAirlines" component={NormandyAirlines}/>
-          <Route path="/projects/ToDoListJS" component={ToDoListJS}/>
+          <Route path="/project/NormandyAirlines" component={NormandyAirlines}/>
+          <Route path="/project/ToDoListJS" component={ToDoListJS}/>
       </Router>
    
    </>

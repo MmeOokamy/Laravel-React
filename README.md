@@ -152,6 +152,7 @@ La plupart de ses outils me sont inconnues.
 
 ### Laravel API
 * Eller on va changer les condition de la function login pour avoir un presque vrai truc
+*  => composer require laravel/sanctum
 
 ### Changements et ajout
 * Crcf

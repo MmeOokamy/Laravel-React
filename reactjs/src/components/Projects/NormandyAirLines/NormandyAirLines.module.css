@@ -1,0 +1,18 @@
+.body{
+    background-color: white;
+}
+
+.orange, .a{
+    color: rgb(255, 112, 29);
+    font-size: 1rem;
+}
+
+.a:hover{
+    
+    font-weight: bold;
+    font-size: 2em;
+}
+
+ul{
+    padding-left:2em;
+}

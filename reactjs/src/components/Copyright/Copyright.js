@@ -10,7 +10,6 @@ const Copyright = () => {
   return (
     <>
         <div className={css.container}>         
-          
           <div>
               <h5>Ookamy ©Copyright {date.getFullYear()}</h5>
               <FontAwesomeIcon  icon={faCode}/>

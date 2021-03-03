@@ -11,10 +11,9 @@ const Navigation = () => {
               <a className="navbar-item" href="/about"> A Propos</a>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link" href="/projects">Projects</a>
-
             <div className="navbar-dropdown">
               <a className="navbar-item" href="/project/ToDoListJS">ToDoList-JS</a>
-              <a className="navbar-item" href="/project/NormandyAirlines">NormandyAirLines</a>
+              <a className="navbar-item" href="/project/NormandyAirlines/readme">NormandyAirLines</a>
             </div>
           </div>
         </div>

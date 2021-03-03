@@ -153,5 +153,23 @@ La plupart de ses outils me sont inconnues.
 ### Laravel API
 * Eller on va changer les condition de la function login pour avoir un presque vrai truc
 
+### Changements et ajout
+* Crcf
+            => npm install create-react-component-folder
+* React-bootstrap
+            => npm install react-bootstrap bootstrap
+            => import { Button } from 'react-bootstrap';
 
+* fontawsome
+            => npm i --save @fortawesome/fontawesome-svg-core
+            => npm install --save @fortawesome/free-solid-svg-icons
+            => npm install --save @fortawesome/react-fontawesome
+            => import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+            => import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+* Le router de react
+            => npm install react-router-dom 
+            => import {Route, BrowserRouter as Router} from "react-router-dom";
+
+    
 

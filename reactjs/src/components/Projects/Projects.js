@@ -2,8 +2,6 @@ import React from "react";
 import css from "./Projects.module.css";
 import Navigation from "../Navigation";
 import Copyright from "../Copyright";
-import NormandyAirLines from "./NormandyAirLines";
-import ToDoListJS from "./ToDoListJS";
 
 const Projects = () => {
   return (

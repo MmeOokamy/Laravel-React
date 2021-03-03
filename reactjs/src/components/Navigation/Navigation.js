@@ -3,23 +3,25 @@ import css from "./Navigation.module.css";
 
 const Navigation = () => {
   return (<>
-  <div className={css.navigation}>
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-              <a className="navbar-item" href="/">Home</a>
-              <a className="navbar-item" href="/about"> A Propos</a>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link" href="/projects">Projects</a>
-            <div className="navbar-dropdown">
-              <a className="navbar-item" href="/project/ToDoListJS">ToDoList-JS</a>
-              <a className="navbar-item" href="/project/NormandyAirlines/readme">NormandyAirLines</a>
+      <div className={css.navigation}>
+        <nav className={css.navbar}>
+          <div className={css.navME}><a className={css.navA} href="/">MmeOokamy</a></div>
+          <div className={css.navItems}>
+            <div><a className={css.navA} href="/about"> A Propos</a></div>
+            <div className={css.navDropdown}>
+              <a className={css.navA} href="/projects">Projets</a>
+              <div className={css.navDropdowncontent}>
+                <div>
+                  <a className={css.navA} href="/project/ToDoList">ToDoList</a>
+                </div>
+                <div>
+                  <a className={css.navA} href="/project/NormandyAirlines/readme">NormandyAirLines</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
-    </div>
 
   </>);
 };

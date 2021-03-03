@@ -1,0 +1,40 @@
+.bodyForm{
+    margin: auto;
+    padding: 2px;
+    width: 500px;
+    
+}
+
+.inputPack{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    width: 100%;
+}
+
+.labelInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.labelFlex{
+    flex-grow: 1;
+}
+
+.inputFlex{
+    flex-grow: 2;
+    width: 100%;
+    margin: auto;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: greenyellow;
+}

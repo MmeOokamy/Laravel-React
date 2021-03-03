@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ToDoListJS from "./ToDoListJS";
+import ListView from "./ListView";
 
-describe("ToDoListJS", () => {
+describe("ListView", () => {
   test("matches snapshot", () => {
-    const wrapper = shallow(<ToDoListJS />);
+    const wrapper = shallow(<ListView />);
     expect(wrapper).toMatchSnapshot();
   });
 });

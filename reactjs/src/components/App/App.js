@@ -8,9 +8,7 @@ import NAL_ResultPage from "../Projects/NormandyAirLines/pages/ResultPage";
 import NAL_ReservationPage from "../Projects/NormandyAirLines/pages/ReservationPage";
 import NAL_ProfilePage from "../Projects/NormandyAirLines/pages/ProfilePage";
 import NAL_ConfirmationPage from "../Projects/NormandyAirLines/pages/PopPage";
-
-
-import ToDoListJS from "../Projects/ToDoListJS";
+import ToDoList from "../Projects/ToDoList";
 import css from "./App.module.css";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 
@@ -29,8 +27,8 @@ const App = ()=> {
           <Route path="/project/NormandyAirlines/reservation" component={NAL_ReservationPage}/>
           <Route path="/project/NormandyAirlines/profile" component={NAL_ProfilePage}/>
           <Route path="/project/NormandyAirlines/confirmation" component={NAL_ConfirmationPage}/>
-          {/* Route de la ToDoListJS */}
-          <Route path="/project/ToDoListJS" component={ToDoListJS}/>
+          {/* Route de la ToDoList */}
+          <Route path="/project/ToDoList" component={ToDoList}/>
       </Router>
    
    </div>

@@ -1,0 +1,21 @@
+.bodyTask{
+    border: 1px solid;
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column; 
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.info{
+    text-align: left;
+    flex-direction: row;
+}

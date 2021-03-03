@@ -1,5 +1,88 @@
-.navigation{
-    margin-bottom: 1em;
+/*
+Theme Name: Font Mass Effect
+ */
 
+ @font-face {
+    font-family: 'mass_effect_123regular';
+    font-weight: 100 900;
+    font-style: normal;
+    src: url('../../src/fonts/me123-webfont.woff2') format('woff2'),
+    url('../../src/fonts/me123-webfont.woff') format('woff');
 }
 
+.navME{
+    font-family: "mass_effect_123regular", serif;
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+}
+
+.navigation{
+    margin-bottom: 1em;
+    box-shadow: 10px 5px 5px rgba(34, 34, 34, 0.4);
+    background-image: linear-gradient(to left bottom, #fff400, #ffdf00, #feca00, #fbb500, #f5a100, #e98d03, #dc7907, #ce650b);
+}
+
+.navbar{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2rem;
+  
+}
+
+.navItems{
+    display: flex;
+    flex-direction: row; 
+    padding: 8px;
+    line-height: 1.5;
+}
+
+.navA{
+    color:#000000;
+    width: auto;
+    margin:10px;
+    padding: 8px;
+    text-decoration: none;
+}
+.navA:hover{
+    text-decoration: underline;
+    background-color:rgba(255,255,255,0.2);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.navDropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navDropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .navDropdown:hover .navDropdowncontent {
+    display: block;
+  }
+
+  .navburger{
+      display: none;
+  }
+
+  @media (max-width: 768px){
+    .navItems{
+        display: flex;
+        flex-direction: column; 
+        padding: 8px;
+        line-height: 1.5;
+    }
+
+   
+  }

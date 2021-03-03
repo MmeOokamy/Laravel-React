@@ -23,19 +23,20 @@ const NormandyAirLines = () => {
         <li><FontAwesomeIcon icon={faArrowRight}/> Annuler une reservation</li>
         <li><FontAwesomeIcon icon={faArrowRight}/> Avoir un profil client</li>
       </ul>
-
-      
-
+      <hr classNAme="my-5"/>
       <div >
-        <div className={css.orange}><FontAwesomeIcon icon={faSignInAlt}/> <a className={css.a} href="/project/NormandyAirlines/recherche">vers le projet</a></div>
-        <div className={css.orange}><a className={css.a} href="https://github.com/MmeOokamy/AirMobile-ReactJs" target="_blank" rel="noreferrer"><i className="fab fa-gitkraken"></i> Le code source du projet (independant)</a></div>
+        <div className={css.orange}>
+          <a className={css.a} href="/project/NormandyAirlines/recherche">
+            <FontAwesomeIcon icon={faSignInAlt}/> vers le projet
+          </a>
+        </div>
+        
+        <div className={css.orange}>
+          <a className={css.a} href="https://github.com/MmeOokamy/AirMobile-ReactJs" target="_blank" rel="noreferrer">
+            <i className="fab fa-gitkraken"></i> Le code source du projet (independant)
+          </a>
+        </div>
       </div>
-            
-
-      
-
-
-
     </Container>
   
   </>);

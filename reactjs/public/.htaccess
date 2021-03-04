@@ -1,4 +1,8 @@
- Options -MultiVues
-    RewriteEngine On
-    RewriteCond% {REQUEST_FILENAME}! -F
-    RewriteRule ^ index.html [QSA, L]
+RewriteEngine on
+RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+RewriteRule ^(.*) - [E=BASE_URI:%1]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ index.html [QSA,L]

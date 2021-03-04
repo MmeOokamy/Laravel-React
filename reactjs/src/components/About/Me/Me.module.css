@@ -22,3 +22,10 @@ Theme Name: Font Mass Effect
     color:#FF8500;
     font-size:1.5em;
 }
+
+.containerUrl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}

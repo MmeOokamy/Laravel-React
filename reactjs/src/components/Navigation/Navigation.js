@@ -9,7 +9,7 @@ const Navigation = () => {
           <div className={css.navItems}>
             <div><a className={css.navA} href="/about"> A Propos</a></div>
             <div className={css.navDropdown}>
-              <a className={css.navA} href="/projects">Projets</a>
+              <span>Projets</span>
               <div className={css.navDropdowncontent}>
                 <div>
                   <a className={css.navA} href="/project/ToDoList">ToDoList</a>

@@ -9,6 +9,7 @@ import NAL_ReservationPage from "../Projects/NormandyAirLines/pages/ReservationP
 import NAL_ProfilePage from "../Projects/NormandyAirLines/pages/ProfilePage";
 import NAL_ConfirmationPage from "../Projects/NormandyAirLines/pages/PopPage";
 import ToDoList from "../Projects/ToDoList";
+import ML_Main from "../Projects/MoviesLand";
 import css from "./App.module.css";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 
@@ -29,6 +30,8 @@ const App = ()=> {
           <Route path="/project/NormandyAirlines/confirmation" component={NAL_ConfirmationPage}/>
           {/* Route de la ToDoList */}
           <Route path="/project/ToDoList" component={ToDoList}/>
+           {/* Route de la MoviesLand */}
+          <Route path="/project/MoviesLand/tab" component={ML_Main}/>
       </Router>
    
    </div>

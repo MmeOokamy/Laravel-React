@@ -1,0 +1,46 @@
+.task{
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-bottom: 4px;
+    padding: 5px;
+    max-width: 800px;
+    min-width: 400px;
+    align-items: center;
+    border:1px solid #ccc;
+
+}
+
+.checkbox{
+    margin-right: 5px;
+}
+
+.title{
+    text-decoration: none;
+    text-align: left;
+    font-size:1.5rem;
+    flex-grow: 2;
+}
+
+.description{
+    display: none;
+}
+
+.task:hover .btn{
+    display: flex;
+}
+
+.btn{
+   display: none;
+   vertical-align: space-between;
+}
+
+.btnTask{
+    background-color:red;
+
+}
+.btnUpdate{
+    background-color:green;
+}
+
+

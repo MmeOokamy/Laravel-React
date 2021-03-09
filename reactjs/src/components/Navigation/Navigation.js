@@ -12,10 +12,13 @@ const Navigation = () => {
               <span>Projets</span>
               <div className={css.navDropdowncontent}>
                 <div>
-                  <a className={css.navA} href="/project/ToDoList">ToDoList</a>
+                  <a className={css.navA}  href="/project/ToDoList">ToDoList <i class="fas fa-hammer"></i></a> 
                 </div>
                 <div>
                   <a className={css.navA} href="/project/NormandyAirlines/readme">NormandyAirLines</a>
+                </div>
+                <div>
+                  <a className={css.navA}  href="/project/MoviesLand/tab">MoviesLand <i class="fas fa-hammer"></i></a> 
                 </div>
               </div>
             </div>

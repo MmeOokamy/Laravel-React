@@ -8,6 +8,7 @@ import Xp from "./Xp";
 import {Tab, Tabs } from 'react-bootstrap';
 
 const About = () => {
+  
   return (<>
     <div className={css.body}>
       <Navigation />

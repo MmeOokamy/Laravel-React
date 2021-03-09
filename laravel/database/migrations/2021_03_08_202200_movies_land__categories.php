@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateToDoListsTable extends Migration
+class MoviesLandCategories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateToDoListsTable extends Migration
      */
     public function up()
     {
-        Schema::create('to_do_lists', function (Blueprint $table) {
-            $table->id();
-            $table->string('title', 255);
-            $table->string('content');
-            $table->string('author');
-            $table->timestamps();
+        Schema::create('ML_Categories', function (Blueprint $table){
+            $table->increments('ML_Categories_id');
+            $table->string('ML_Categories_title', 255);
+
         });
     }
 
@@ -29,6 +27,6 @@ class CreateToDoListsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('to_do_lists');
+        Schema::dropIfExists('ML_Categories');
     }
 }

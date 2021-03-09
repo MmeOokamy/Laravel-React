@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import FormView from "./FormView";
+import CategoryView from "./CategoryView";
 
-describe("FormView", () => {
+describe("CategoryView", () => {
   test("matches snapshot", () => {
-    const wrapper = shallow(<FormView />);
+    const wrapper = shallow(<CategoryView />);
     expect(wrapper).toMatchSnapshot();
   });
 });

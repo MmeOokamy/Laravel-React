@@ -1,10 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ListView from "./ListView";
+import Task from "./Task";
 
-describe("ListView", () => {
+describe("Task", () => {
   test("matches snapshot", () => {
-    const wrapper = shallow(<ListView />);
+    const wrapper = shallow(<Task />);
     expect(wrapper).toMatchSnapshot();
   });
 });

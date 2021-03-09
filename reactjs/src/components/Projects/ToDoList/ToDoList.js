@@ -1,13 +1,13 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import NavBar from "../../Navigation";
 import Copyright from "../../Copyright";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSignInAlt, faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
 
-
 import css from "./ToDoList.module.css";
-import ListView from "./components/ListView";
-import FormView from "./components/FormView";
+import Task from "./components/Task/Task";
+import FormAddTask from "./components/FormAddTask/FormAddTask";
+
 
 
 const ToDoList = () => {
@@ -31,29 +31,19 @@ const ToDoList = () => {
   ];
   const [list, setList] = useState(listTache);
 
-
-
-
   return (<>
       <NavBar />
      <div className="container">
-       
-        <h1> Ma Super Liste  super moche</h1>
-        <h3>En cour de réalisation</h3>
-        <div className={css.fbox}>
-          <div >
-            {list.map((task)=> (
-              <ListView task={task} />
-            ))}
-          </div>  
-          
-          <div className={css.form}>
-          <FormView />
-          </div>
-        </div>
-    
+       <div>
+         <FormAddTask />
+       </div>
+       <hr/>
+      <div>{list.map((t)=>(
+        <Task task={t} />
+      ))}</div>
+   
     </div>
-    <Copyright />
+    
   </>);
 };
 

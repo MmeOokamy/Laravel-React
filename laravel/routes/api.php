@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controller\ToDoListController;
+use App\Http\Controller\MoviesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('todolist', 'ToDoListController');
+Route::apiResource('movies', 'MoviesController');
 
 Route::get('/test', function () {
     return ['name'=> "Ookamy"];

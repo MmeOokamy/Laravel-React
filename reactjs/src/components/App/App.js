@@ -13,6 +13,8 @@ import ML_Main from "../Projects/MoviesLand";
 import css from "./App.module.css";
 import {Route, BrowserRouter as Router} from "react-router-dom";
 
+import ProgressBar from "../Projects/ProgressBarVisual";
+
 const App = ()=> {
 
    return (<>
@@ -21,6 +23,7 @@ const App = ()=> {
           <Route path="/" exact component={Index} />
           <Route path="/about" component={About}/>
           <Route path="/projects" component={Projects}/>
+          <Route path="/progressBar" component={ProgressBar}/>
           {/* Route du projet NormandyAirLines en ReactJS */}
           <Route path="/project/NormandyAirlines/readme" component={NAL}/>
           <Route path="/project/NormandyAirlines/recherche" component={NAL_SearchPage}/>

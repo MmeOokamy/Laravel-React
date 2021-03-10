@@ -6,7 +6,7 @@ const Task = ({task}) => {
     <label className={css.task}>
       <input className={css.checkbox} type="checkbox" name="statue" />
       <div className={css.title}>{task.title}</div>
-      <p className={css.description}>{task.description}</p>
+      <p className={css.description}>{task.content}</p>
       <div className={css.btn}>
         <button className={css.btnTask}><i class="far fa-trash-alt"></i></button>
         <button className={css.btnUpdate}><i class="far fa-edit"></i></button>

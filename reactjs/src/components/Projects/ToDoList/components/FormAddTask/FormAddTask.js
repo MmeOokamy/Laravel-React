@@ -5,7 +5,7 @@ const FormAddTask = () => {
 
   const initForm = {
     title: "",
-    description: "",
+    content: "",
   };
   const [form, setForm] = useState(initForm);
 
@@ -30,7 +30,7 @@ const FormAddTask = () => {
 
      <div className={css.formBox}>
       <label className={css.formLabel}>Description : </label>
-      <input className={css.formInput} type="text" name="description" value={form.description} />
+      <input className={css.formInput} type="text" name="content" value={form.description} />
     </div>
 
     <div className={css.btn}>

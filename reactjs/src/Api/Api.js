@@ -12,7 +12,7 @@ export const ApiProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = `  `;
+      const url = `http://127.0.0.1:8000/api/todolist`;
       setList(objToArr(await doFetch(url)));
     };
     fetchData();

@@ -1,8 +1,10 @@
 import React from "react";
+import Navigation from "../../Navigation";
 
 const Xp = () => {
   return (<>
-    <section className="resume-section p-3 mb-3 p-lg-3 d-flex align-items-center" id="skills">
+    <Navigation />
+    <section className="container resume-section p-3 mb-3 p-lg-3 d-flex align-items-center" id="skills">
             <div className="w-sm-100 row">
               <h2 className="mb-5 col-12">Expériences</h2>
              

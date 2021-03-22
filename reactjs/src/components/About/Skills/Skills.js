@@ -1,13 +1,15 @@
 import React from "react";
 import {CircleProgress} from '../../ProgressBar/GradientCircle';
+import Navigation from "../../Navigation";
 
 
 const Skills = () => {
   return (<>
-     <section className="resume-section p-3 mb-3 p-lg-3 d-flex align-items-center" id="skills">
+    <Navigation />
+     <section className=" container resume-section p-3 mb-3 p-lg-3 d-flex align-items-center" id="skills">
             <div className="w-sm-100 row">
               <h2 className="mb-5 col-12">Compétences</h2>
-              <p className="mb-5 col-12">Les ProgressBar representent plus mon affinité que mes connaissances car le monde de la programmation evolue plus vite que la capacité humaine a tout apprendre!</p>
+              <p className="mb-5 col-12">Les cercles de progression symbolisent mon affinité par rapport à certaines technos. Le monde de la programmation évolue plus vite que la capacité d'apprentissage humaine.</p>
               
               <div className="col-md-4 mb-5">
                 <div className="subheading mb-3 text-center">Langages</div>
@@ -32,6 +34,9 @@ const Skills = () => {
                   </div>
                   <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Java & J2EE">
                   <CircleProgress icon={<i className="fab fa-java"></i>} percentage={30} strokeWidth={5} width={100} primaryColor={["#11FFBD", "#AAFFB9"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Je débute en Python">
+                  <CircleProgress icon={<i class="fab fa-python"></i>} percentage={2} strokeWidth={5} width={100} primaryColor={["#11FFBD", "#AAFFB9"]}/>
                   </div>
                 </div>
               </div>
@@ -64,8 +69,11 @@ const Skills = () => {
                   <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="GitKraken">
                     <CircleProgress icon={<i className="fab fa-gitkraken"></i>} percentage={10} strokeWidth={5} width={100} primaryColor={["#004693", "#00FFE9"]}/>
                   </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Git">
+                    <CircleProgress icon={<i className="fab fa-git"></i>} percentage={30} strokeWidth={5} width={100} primaryColor={["#004693", "#00FFE9"]}/>
+                  </div>
                   <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Github">
-                    <CircleProgress icon={<i className="fab fa-github"></i>} percentage={10} strokeWidth={5} width={100} primaryColor={["#004693", "#00FFE9"]}/>
+                    <CircleProgress icon={<i className="fab fa-github"></i>} percentage={40} strokeWidth={5} width={100} primaryColor={["#004693", "#00FFE9"]}/>
                   </div>
                   <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="NPM">
                    <CircleProgress icon={<i className="fab fa-npm"></i>} percentage={10} strokeWidth={5} width={100} primaryColor={["#004693", "#00FFE9"]}/>
@@ -76,23 +84,31 @@ const Skills = () => {
       
                 </div>
               </div>
-              <ul className="fa-ul mb-5">
-                  <li>
-                      <i className="fa-li fas fa-terminal"></i>
-                      Visual Code - Eclipse - PhpStorm - xCode</li>
-                  <li>
-                  <i className="fa-li fas fa-laptop-code"></i>
-                  Windows - Linux - <i className="fas fa-user-secret"></i>ackintosh</li>
-                <li>
-                  <i className="fa-li fas fa-bug"></i>
-                  Parler a mon code ne fait pas de moi une femme étrange!</li>
-                <li>
-                  <i className="fa-li fas fa-users"></i>
-                  Le travail d'équipe est important</li>
-                <li>
-                  <i className="fa-li fas fa-search"></i>
-                  Capable de chercher l'information!</li>
-              </ul>
+              <div className="col-md-4 mb-5 ">
+                <div className="subheading mb-3 text-center">OS / IDE / Divers</div>
+                <div className="row">
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Manjaro Linux">
+                    <CircleProgress icon={<i className="fab fa-linux"></i>} percentage={45} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Travail d'équipe">
+                    <CircleProgress icon={<i class="fas fa-users"></i>} percentage={75} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Terminal et ligne de commande">
+                   <CircleProgress icon={<i class="fas fa-terminal"></i>} percentage={50} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Windows xp/7/10">
+                    <CircleProgress icon={<i class="fab fa-windows"></i>} percentage={95} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Parler a mon code ne fait pas de moi une femme étrange!">
+                    <CircleProgress icon={<i class="fas fa-bug"></i>} percentage={66} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+                  <div className="col-4 text-center h1" data-toggle="tooltip" data-placement="top" title="Capable de chercher l'information!">
+                    <CircleProgress icon={<i class="fas fa-search"></i>} percentage={85} strokeWidth={5} width={100} primaryColor={["#6A0740", "#EB1212"]}/>
+                  </div>
+      
+                </div>
+              </div>
+              
 
             </div>
           </section>

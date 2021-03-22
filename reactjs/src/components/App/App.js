@@ -1,6 +1,9 @@
 import React from 'react';
 import Index from "../Index";
 import About from "../About";
+import AboutMe from "../About/Me";
+import AboutSkills from "../About/Skills";
+import AboutXP from "../About/Xp";
 import Projects from "../Projects";
 import NAL from "../Projects/NormandyAirLines";
 import NAL_SearchPage from "../Projects/NormandyAirLines/pages/SearchPage";
@@ -22,6 +25,9 @@ const App = ()=> {
       <Router>
           <Route path="/" exact component={Index} />
           <Route path="/about" component={About}/>
+          <Route path="/aboutme" component={AboutMe}/>
+          <Route path="/aboutskills" component={AboutSkills}/>
+          <Route path="/aboutxp" component={AboutXP}/>
           <Route path="/projects" component={Projects}/>
           <Route path="/progressBar" component={ProgressBar}/>
           {/* Route du projet NormandyAirLines en ReactJS */}

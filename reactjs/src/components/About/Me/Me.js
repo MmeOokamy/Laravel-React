@@ -1,9 +1,11 @@
 import React from "react";
 import css from "./Me.module.css";
+import Navigation from "../../Navigation";
 
 const Me = () => {
   return (<>
-    <section className="resume-section p-3 mb-3 p-lg-3 d-flex" id="about">
+  <Navigation />
+    <section className="container resume-section p-3 mb-3 p-lg-3 d-flex" id="about">
             <div className="w-sm-100">
                 <h1 className="mt-4 mb-1 massEffect">Mme
                     <span className={css.massEffect}>Ookamy</span>

@@ -8,9 +8,16 @@ const Projects = () => {
     <>
     <div className={css.body}>
       <Navigation />
-      <div className="container">
-        <h1>Mes projets de développement codé avec différents langages, librairies, frameworks</h1>
-       
+      <div className={css.container}>
+        <h1>Mes projets de développement personnels:</h1>
+        <h2>l'intégration de tous les travaux effectuer est plus difficile que prévus, je mélange le php - symfony - laravel - react Js - ionic angular - bref un bon goulbigoulba </h2>
+        <div>
+          <p>
+              <a className={css.navA} href="/project/NormandyAirlines/readme">NormandyAirLines</a> est le plus recent project developper en formation. 
+              A la base c'est le resultat developpement sur 4 jours pour une app de reservation de billet d'avion apres un cour rapide sur 4jrs.
+          </p>
+        </div>
+      
         
       </div>
       <Copyright />

@@ -10,6 +10,7 @@ const Navigation = () => {
             <div><a className={css.navA} href="/aboutme"> A Propos</a></div>
             <div><a className={css.navA} href="/aboutskills"> Mes Connaissances</a></div>
             <div><a className={css.navA} href="/aboutxp"> Mes Expériences</a></div>
+            <div><a className={css.navA} href="/projects"> Mes Projects</a></div>
             {/* <div className={css.navDropdown}>
               <span>Projets</span>
               <div className={css.navDropdowncontent}>

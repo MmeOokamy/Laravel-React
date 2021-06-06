@@ -172,5 +172,5 @@
             => npm install react-router-dom 
             => import {Route, BrowserRouter as Router} from "react-router-dom";
 
-    
+* Pour deployer => npm run build
 

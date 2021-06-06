@@ -1,36 +1,36 @@
 # Laravel & ReactJs
 
 ### Challenge de développement pour ce dépôt: (Ce que je veux faire)
-=> * Simple Page Application - ReactJs
-* Importer des projets php / "java" - Laravel & MariaDB
-* Envoyer sur Github - GitKraken
-* Suivi de projet - Jira
-* Dév un petit bot - Wit.ai
-* (perhaps) Dév une application android - ReactNative - expo
+-   Simple Page Application - ReactJs
+-   Importer des projets php / "java" - Laravel & MariaDB
+-   Envoyer sur Github - GitKraken
+-   Suivi de projet - Jira
+-   Dév un petit bot - Wit.ai
+-   (perhaps) Dév une application android - ReactNative - expo / ou ionic angular
 
 ## Challenge Accepted!
-=> Ce projet existe pour m’entraîner et apprendre les bases afin d'être préparé au mieux et entamer mon stage sereinement.
-La plupart de ses outils me sont inconnues.
+* => Ce projet existe pour m’entraîner et apprendre les bases afin d'être préparé au mieux et entamer mon stage sereinement.
+  La plupart de ses outils me sont inconnues.
 
 ## Initialized Laravel & React dans 2 dossiers dif
 
-    * composer create-project laravel/laravel laravel
-    * npx create-react-app reactjs
+   * composer create-project laravel/laravel laravel
+   * npx create-react-app reactjs
 
 ### Laravel
 
-    * gerer .env pour adapter a mariadb => port 3006
-    * php artisan serve => c'est good
+   * gerer .env pour adapter a mariadb => port 3006
+   * php artisan serve => c'est good
 
 ### ReactJs
 
-    * npm start => c'est good
+* npm start => c'est good
 
 ## Lié les deux par une API ?
 
 ### laravel
 
-    * dans le fichier => laravel/app/routes/api.php
+*   dans le fichier => laravel/app/routes/api.php
         * Route::get('/test', function () {
              return ['name'=> "Ookamy"];
         });
@@ -39,7 +39,7 @@ La plupart de ses outils me sont inconnues.
 
 ### ReactJs
 
-    * npm start
+*   * npm start
     * trier les fichiers et components/app
     * jsconfig.js
         * {
@@ -120,8 +120,8 @@ La plupart de ses outils me sont inconnues.
     * php artisan make:controller AuthApi
     * dans ce fichier app/Http/Controllers/AuthApi.php 
       *  function login(Request $request){
-        return $request->input();
-      }
+            return $request->input();
+        }
 
 * Dans routes/api.php on rajoute => Route::post('/login', "AuthApi@login");
 
@@ -135,23 +135,23 @@ La plupart de ses outils me sont inconnues.
 
 * on va modifier submit() pour envoyer une requete
      * submit =() => {
-    console.log(this.state)
-    fetch('http://127.0.0.1:8000/api/login',{
-      method: 'post',
-      body: JSON.stringify(this.state),
-      headers: {
-        'Accept':'application/json',
-        'Content-Type':'application/json',
-      },
-    }).then(function(response) {
-      response.json().then(function(resp){
-          console.log(resp);
-      })
-      })
-  }
+            console.log(this.state)
+            fetch('http://127.0.0.1:8000/api/login',{
+            method: 'post',
+            body: JSON.stringify(this.state),
+            headers: {
+                'Accept':'application/json',
+                'Content-Type':'application/json',
+            },
+            }).then(function(response) {
+            response.json().then(function(resp){
+                console.log(resp);
+            })
+            })
+        }
 
 ### Laravel API
-* Eller on va changer les condition de la function login pour avoir un presque vrai truc
+* Aller on va changer les condition de la function login pour avoir un presque vrai truc
 *  => composer require laravel/sanctum
 
 ### Changements et ajout
